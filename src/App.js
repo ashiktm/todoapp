@@ -1,8 +1,7 @@
-// import logo from './logo.svg';
+
 import './App.css'  ;
 import React, {useState,useEffect} from 'react'
-// import display from './Display';
-// import Display from './Display';
+
 import Form from './component/Form'
 import TodoList from  './component/TodoList'
 
@@ -71,13 +70,7 @@ const getLocaltodos = ()=>{
      todos={todos} 
      setTodos={setTodos}
      filteredTodos={filteredTodos}/>
-      
-      {/* <h1 onClick={()=> setShow(!show)}>Show/Hide</h1>
-     { show && <Display/>}
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
-      <p>You clicked {count} times</p> */}
+  
     </div>
   );
 }

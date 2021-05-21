@@ -4,10 +4,7 @@ function Todo({text,todos,setTodos,todo}) {
  const deleteHandler = () => {
 
    setTodos(todos.filter((el) => el.id !== todo.id ))
-//     const newItems = [...toDos]
-    
-//     newItems.splice(key, 1)
-//     setTodos(newItems)
+
  }
 
  const completeHandler = () => {
