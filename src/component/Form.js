@@ -1,7 +1,10 @@
 // import React from 'react'
 
+import '../App.css'
 function Form({todos,setTodos,setInputText,inputText,status,setStatus,filteredTodos}) {
 
+
+  
  const inputTextHandler = (e) =>{
   console.log(e.target.value)
   setInputText(e.target.value)
@@ -21,7 +24,8 @@ function Form({todos,setTodos,setInputText,inputText,status,setStatus,filteredTo
 }
  return (
    <form>
-      <input value={inputText} onChange={inputTextHandler} type="text " className="todo-input"/>
+     
+      <input value={inputText} onChange={inputTextHandler} type="text " className="todo-input" />
       <button   onClick= {submitTodoHandler} className="todo-button" type="submit">
         <i className="fas fa-plus-square"></i>
       </button>

@@ -5,6 +5,21 @@
 }
 body {
   background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  /* background-image: linear-gradient(
+    109.6deg,
+    rgba(62, 161, 219, 1) 11.2%,
+    rgba(93, 52, 236, 1) 100.2%
+  ); */
+  /* background-image: linear-gradient(
+    179.4deg,
+    rgba(33, 150, 243, 1) 1.8%,
+    rgba(22, 255, 245, 0.6) 97.1%
+  ); */
+  /* background-image: linear-gradient(
+    76.3deg,
+    rgba(44, 62, 78, 1) 12.6%,
+    rgba(69, 103, 131, 1) 82.8%
+  ); */
   color: white;
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
@@ -26,6 +41,7 @@ form button {
   font-size: 2rem;
   border: none;
   background: white;
+  border-radius: 0.2rem;
 }
 form button {
   color: #ff6f47;
@@ -46,6 +62,15 @@ form button:hover {
 .todo-list {
   min-width: 30%;
   list-style: none;
+}
+.todo-item {
+  padding: 0rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.time {
+  color: #70757a;
+  font-size: large;
 }
 
 .todo {
@@ -76,9 +101,6 @@ form button:hover {
 }
 .complete-btn {
   background: rgb(11, 212, 162);
-}
-.todo-item {
-  padding: 0rem 0.5rem;
 }
 
 .fa-trash,
@@ -132,8 +154,8 @@ select {
   pointer-events: none;
 }
 /* Transition */
-/*
-.select:hover::after {
+
+/* .select:hover::after {
   transform: scale(1.5);
-}
-*/
+} */
+/* The container must be positioned relative: */
